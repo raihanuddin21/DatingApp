@@ -11,10 +11,10 @@ namespace DatingApp.API.Data
 	{
 		private readonly DataContext _context;
 
-		public AuthRepository(DataContext context)
-		{
-			_context = context;
-		}
+        public AuthRepository(DataContext context)
+        {
+            _context = context;
+        }
 		public async Task<User> Register(User user, string password)
 		{
 			byte[] passwordHash, passwordSalt;
